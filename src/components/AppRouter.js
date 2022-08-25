@@ -9,7 +9,7 @@ const AppRouter = () => {
   const { auth } = useContext(Context); // получаем пользователя через Context
   const [user] = useAuthState(auth); // в случае, если пользователь залогинен, то user = true и нам вернется объект user, по-другому нам вернётся null
   // информация о пользователе нам так же нужна в Navbar
-  console.log(user);
+  // console.log(user);
 
   return user ? (
     <Switch>

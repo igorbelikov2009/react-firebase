@@ -21,8 +21,8 @@ const Chat = () => {
   // orderBy('createdAt') -- сортировка по полю создания сообщения
 
   const sendMessage = async () => {
-    // console.log(value.trim.length); // если сообщение пустое, то метод не выполнится
-    if (value.trim.length) {
+    console.log(value.trim().length); // если сообщение пустое, то метод не выполнится
+    if (value.trim().length) {
       firestore.collection("messages").add({
         uid: user.uid,
         displayName: user.displayName,
